@@ -1,4 +1,5 @@
 import "./App.css";
+import Footer from "./components/Footer";
 
 function App() {
   return (
@@ -10,6 +11,7 @@ function App() {
         blanditiis minus ducimus cupiditate eveniet autem! Nam nihil qui
         necessitatibus voluptatum suscipit.
       </p>
+      <Footer />
     </>
   );
 }
