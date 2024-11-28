@@ -3,12 +3,11 @@ import { useState } from "react";
 const Header = () => {
   const [state, setState] = useState(false);
 
-  // Replace javascript:void(0) path with your path
   const navigation = [
-    { title: "About Us", path: "javascript:void(0)" },
-    { title: "Offers", path: "javascript:void(0)" },
-    { title: "Services", path: "javascript:void(0)" },
-    { title: "Follow", path: "javascript:void(0)" },
+    { title: "About Us", path: "./about" },
+    { title: "Offers", path: "./offers" },
+    { title: "Services", path: "./services" },
+    { title: "Contact", path: "./contact" },
   ];
 
   return (

@@ -1,6 +1,11 @@
 import "./App.css";
 import Footer from "./components/Footer";
 import Header from "./components/Header";
+import Home from "./components/Home";
+import About from "./components/About";
+import Services from "./components/Services";
+import Offers from "./components/Offers";
+import Contact from "./components/Contact";
 import {
   BrowserRouter as Router,
   Route,
@@ -13,11 +18,15 @@ function App() {
     <>
       <Router>
         <Header />
-        <Routes>
-          <h1 className="text-3xl font-bold underline bg-red-500">
-            Hello world!
-          </h1>
-        </Routes>
+        <div className="w-1/2 h-max">
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/about" element={<About />} />
+            <Route path="/contact" element={<Contact />} />
+            <Route path="/offers" element={<Offers />} />
+            <Route path="/services" element={<Services />} />
+          </Routes>
+        </div>
         <Footer />
       </Router>
     </>
