@@ -18,7 +18,7 @@ function App() {
     <>
       <Router>
         <Header />
-        <div className="w-1/2 h-max">
+        <div className="w-full h-max">
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/about" element={<About />} />
