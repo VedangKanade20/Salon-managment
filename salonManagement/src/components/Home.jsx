@@ -1,22 +1,126 @@
 const Home = () => {
   return (
-    <div
-      className="hero min-h-screen"
-      style={{
-        backgroundImage:
-          "url(https://img.daisyui.com/images/stock/photo-1507358522600-9f71e620c44e.webp)",
-      }}
-    >
-      <div className="hero-overlay bg-opacity-60"></div>
-      <div className="hero-content text-neutral-content text-center">
-        <div className="max-w-md">
-          <h1 className="mb-5 text-5xl font-extrabold">Tip Top Family Salon</h1>
-          <h3 className="mb-5 font-bold text-3xl">
-            Hairstyle magic happens here!!
-          </h3>
-          <button className="btn btn-primary">Get Started</button>
+    // flex direction col
+    <div className="flex-col">
+      <div
+        className="hero min-h-screen"
+        style={{
+          backgroundImage:
+            "url(https://img.daisyui.com/images/stock/photo-1507358522600-9f71e620c44e.webp)",
+        }}
+      >
+        <div className="hero-overlay bg-opacity-60"></div>
+        <div className="hero-content text-neutral-content text-center">
+          <div className="max-w-md">
+            <h1 className="mb-5 text-5xl font-extrabold">
+              Tip Top Family Salon
+            </h1>
+            <h3 className="mb-5 font-bold text-3xl">
+              Hairstyle magic happens here!!
+            </h3>
+            <button className="btn btn-primary">Get Started</button>
+          </div>
         </div>
       </div>
+
+      <section className="py-14">
+        <div className="max-w-screen-xl mx-auto md:px-8">
+          <div className="items-center gap-x-12 sm:px-4 md:px-0 lg:flex">
+            <div className="flex-1 sm:hidden lg:block">
+              <img
+                src="https://images.unsplash.com/photo-1557804506-669a67965ba0?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80"
+                className="md:max-w-lg sm:rounded-lg"
+                alt=""
+              />
+            </div>
+            <div className="max-w-xl px-4 space-y-3 mt-6 sm:px-0 md:mt-0 lg:max-w-2xl">
+              <h3 className="text-indigo-600 font-semibold">
+                Professional services
+              </h3>
+              <p className="text-gray-800 text-3xl font-semibold sm:text-4xl">
+                Build your SaaS solution with help from our experts
+              </p>
+              <p className="mt-3 text-gray-600">
+                Duis aute irure dolor in reprehenderit in voluptate velit esse
+                cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+                cupidatat non proident, sunt in culpa qui officia deserunt
+                mollit anim id est laborum, sed ut perspiciatis unde omnis iste
+                natus error sit voluptatem accusantium doloremque laudantium
+              </p>
+              <a
+                href="javascript:void(0)"
+                className="inline-flex gap-x-1 items-center text-indigo-600 hover:text-indigo-500 duration-150 font-medium"
+              >
+                Learn more
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 20 20"
+                  fill="currentColor"
+                  className="w-5 h-5"
+                >
+                  <path
+                    fillRule="evenodd"
+                    d="M3 10a.75.75 0 01.75-.75h10.638L10.23 5.29a.75.75 0 111.04-1.08l5.5 5.25a.75.75 0 010 1.08l-5.5 5.25a.75.75 0 11-1.04-1.08l4.158-3.96H3.75A.75.75 0 013 10z"
+                    clipRule="evenodd"
+                  />
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <div className="hero bg-base-200 min-h-screen">
+        <div className="hero-content flex-col lg:flex-row-reverse">
+          <img
+            src="https://img.daisyui.com/images/stock/photo-1635805737707-575885ab0820.webp"
+            className="max-w-sm rounded-lg shadow-2xl"
+          />
+          <div>
+            <h1 className="text-5xl font-bold">Box Office News!</h1>
+            <p className="py-6">
+              Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda
+              excepturi exercitationem quasi. In deleniti eaque aut repudiandae
+              et a id nisi.
+            </p>
+            <button className="btn btn-primary">Get Started</button>
+          </div>
+        </div>
+      </div>
+
+      <section className="max-w-screen-xl mx-auto py-4 px-4 md:px-8">
+        <div className="max-w-xl">
+          <div className="py-4">
+            <h3 className="text-3xl text-gray-800 font-semibold md:text-4xl">
+              Fabulous hairdressing starts{" "}
+              <span className="text-indigo-600">here</span>
+            </h3>
+            <p className="text-gray-500 leading-relaxed mt-3 text-xl">
+              We have the best methodologies in hair care
+            </p>
+          </div>
+          <a
+            className="group px-4 py-2 text-indigo-600 font-medium bg-indigo-50 rounded-full inline-flex items-center"
+            href="javascript:void()"
+          >
+            Book an Appointment Now!
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              className="h-6 w-6 ml-1 duration-150 group-hover:translate-x-1"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+            >
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth={2}
+                d="M13 7l5 5m0 0l-5 5m5-5H6"
+              />
+            </svg>
+          </a>
+        </div>
+      </section>
     </div>
   );
 };

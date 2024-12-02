@@ -15,7 +15,7 @@ const Header = () => {
       <div className="items-center px-4 max-w-screen-xl mx-auto md:flex md:px-8">
         <div className="flex items-center justify-between py-3 md:py-5 md:block">
           <a href="/">
-            <img src="./logo.webp" width={70} height={35} alt="Float UI logo" />
+            <img src="./image.png" width={70} height={35} alt="Float UI logo" />
           </a>
           <div className="md:hidden">
             <button
