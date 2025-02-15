@@ -1,7 +1,10 @@
 import { useState } from "react";
+import { useTheme } from "../context/ThemeContext"; // Import the useTheme hook
+import { FaMoon, FaSun } from "react-icons/fa"; // Import React Icons
 
 const Header = () => {
   const [state, setState] = useState(false);
+  const { theme, toggleTheme } = useTheme(); // Get theme and toggle function
 
   const navigation = [
     { title: "About Us", path: "./about" },
@@ -67,7 +70,20 @@ const Header = () => {
             })}
           </ul>
         </div>
-        <div className="hidden md:inline-block">
+        <div className="hidden md:inline-block flex items-center gap-4">
+          {/* Theme Toggle Button */}
+          <button
+            onClick={toggleTheme}
+            className="p-2 text-white hover:bg-gray-700 rounded-full focus:outline-none"
+          >
+            {theme === "light" ? (
+              // Moon Icon for Dark Theme
+              <FaMoon className="h-6 w-6" />
+            ) : (
+              // Sun Icon for Light Theme
+              <FaSun className="h-6 w-6" />
+            )}
+          </button>
           <a
             href="javascript:void(0)"
             className="py-3 px-4 text-white bg-indigo-600 hover:bg-indigo-700 rounded-md shadow"
