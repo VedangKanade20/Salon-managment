@@ -1,11 +1,11 @@
 import "./App.css";
 import Footer from "./components/Footer";
 import Header from "./components/Header";
-import Home from "./components/Home";
-import About from "./components/About";
-import Services from "./components/Services";
-import Offers from "./components/Offers";
-import Contact from "./components/Contact";
+import Home from "./Pages/Home";
+import About from "./Pages/About";
+import Services from "./Pages/Services";
+import Offers from "./Pages/Offers";
+import Contact from "./Pages/Contact";
 import {
   BrowserRouter as Router,
   Route,

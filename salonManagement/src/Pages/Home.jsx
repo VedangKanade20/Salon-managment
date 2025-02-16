@@ -23,6 +23,7 @@ const Home = () => {
         </div>
       </div>
 
+      {/* 2nd section */}
       <section className="py-14">
         <div className="max-w-screen-xl mx-auto md:px-8">
           <div className="items-center gap-x-12 sm:px-4 md:px-0 lg:flex">
@@ -34,13 +35,13 @@ const Home = () => {
               />
             </div>
             <div className="max-w-xl px-4 space-y-3 mt-6 sm:px-0 md:mt-0 lg:max-w-2xl">
-              <h3 className="text-indigo-600 font-semibold">
+              <h3 className="text-white font-semibold">
                 Professional services
               </h3>
-              <p className="text-gray-800 text-3xl font-semibold sm:text-4xl">
+              <p className="text-white text-3xl font-semibold sm:text-4xl">
                 Build your SaaS solution with help from our experts
               </p>
-              <p className="mt-3 text-gray-600">
+              <p className="mt-3 text-white">
                 Duis aute irure dolor in reprehenderit in voluptate velit esse
                 cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
                 cupidatat non proident, sunt in culpa qui officia deserunt
@@ -48,7 +49,7 @@ const Home = () => {
                 natus error sit voluptatem accusantium doloremque laudantium
               </p>
               <a
-                href="javascript:void(0)"
+                href="/about"
                 className="inline-flex gap-x-1 items-center text-indigo-600 hover:text-indigo-500 duration-150 font-medium"
               >
                 Learn more
@@ -70,6 +71,7 @@ const Home = () => {
         </div>
       </section>
 
+      {/* 3rd section */}
       <div className="hero bg-base-200 min-h-screen">
         <div className="hero-content flex-col lg:flex-row-reverse">
           <img
@@ -88,10 +90,11 @@ const Home = () => {
         </div>
       </div>
 
+      {/* 4th section */}
       <section className="max-w-screen-xl mx-auto py-4 px-4 md:px-8">
         <div className="max-w-xl">
           <div className="py-4">
-            <h3 className="text-3xl text-gray-800 font-semibold md:text-4xl">
+            <h3 className="text-3xl text-white font-semibold md:text-4xl">
               Fabulous hairdressing starts{" "}
               <span className="text-indigo-600">here</span>
             </h3>
@@ -101,7 +104,7 @@ const Home = () => {
           </div>
           <a
             className="group px-4 py-2 text-indigo-600 font-medium bg-indigo-50 rounded-full inline-flex items-center"
-            href="javascript:void()"
+            href="./Contact"
           >
             Book an Appointment Now!
             <svg
