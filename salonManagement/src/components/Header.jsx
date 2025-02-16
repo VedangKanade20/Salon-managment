@@ -1,10 +1,7 @@
 import { useState } from "react";
-import { useTheme } from "../context/ThemeContext"; // Import the useTheme hook
-import { FaMoon, FaSun } from "react-icons/fa"; // Import React Icons
 
 const Header = () => {
   const [state, setState] = useState(false);
-  const { theme, toggleTheme } = useTheme(); // Get theme and toggle function
 
   const navigation = [
     { title: "About Us", path: "./about" },
@@ -14,11 +11,12 @@ const Header = () => {
   ];
 
   return (
+    //
     <nav className="bg-gray-900 w-full border-b md:border-0 md:static">
       <div className="items-center px-4 max-w-screen-xl mx-auto md:flex md:px-8">
         <div className="flex items-center justify-between py-3 md:py-5 md:block">
           <a href="/">
-            <img src="./image.png" width={70} height={35} alt="Float UI logo" />
+            <h1>Tip Top Saloon</h1>
           </a>
           <div className="md:hidden">
             <button
@@ -70,20 +68,7 @@ const Header = () => {
             })}
           </ul>
         </div>
-        <div className="hidden md:inline-block flex items-center gap-4">
-          {/* Theme Toggle Button */}
-          <button
-            onClick={toggleTheme}
-            className="p-2 text-white hover:bg-gray-700 rounded-full focus:outline-none"
-          >
-            {theme === "light" ? (
-              // Moon Icon for Dark Theme
-              <FaMoon className="h-6 w-6" />
-            ) : (
-              // Sun Icon for Light Theme
-              <FaSun className="h-6 w-6" />
-            )}
-          </button>
+        <div className="hidden md:inline-block">
           <a
             href="javascript:void(0)"
             className="py-3 px-4 text-white bg-indigo-600 hover:bg-indigo-700 rounded-md shadow"
