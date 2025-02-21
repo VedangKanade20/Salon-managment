@@ -5,9 +5,9 @@ const Header = () => {
 
   const navigation = [
     { title: "About Us", path: "./about" },
-    { title: "Offers", path: "./offers" },
     { title: "Services", path: "./services" },
     { title: "Contact", path: "./contact" },
+    { title: "Terms & Conditions", path: "./tandc" },
   ];
 
   return (

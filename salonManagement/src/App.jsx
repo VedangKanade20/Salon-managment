@@ -4,7 +4,6 @@ import Header from "./components/Header";
 import Home from "./Pages/Home";
 import About from "./Pages/About";
 import Services from "./Pages/Services";
-import Offers from "./Pages/Offers";
 import Contact from "./Pages/Contact";
 import {
   BrowserRouter as Router,
@@ -12,6 +11,7 @@ import {
   Routes,
   Navigate,
 } from "react-router-dom";
+import TandC from "./Pages/TandC";
 
 function App() {
   return (
@@ -23,7 +23,7 @@ function App() {
             <Route path="/" element={<Home />} />
             <Route path="/about" element={<About />} />
             <Route path="/contact" element={<Contact />} />
-            <Route path="/offers" element={<Offers />} />
+            <Route path="/tandc" element={<TandC />} />
             <Route path="/services" element={<Services />} />
           </Routes>
         </div>

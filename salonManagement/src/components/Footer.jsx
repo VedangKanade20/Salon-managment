@@ -8,16 +8,16 @@ const Footer = () => {
         aria-label="Footer Navigation"
         className="mx-auto mb-10 flex max-w-lg flex-col gap-10 text-center sm:flex-row sm:text-left"
       >
-        <a href="#" className="font-medium text-white">
-          Demo
+        <a href="/about" className="font-medium text-white">
+          About
         </a>
-        <a href="#" className="font-medium text-white">
-          Support
+        <a href="/services" className="font-medium text-white">
+          Services
         </a>
-        <a href="#" className="font-medium text-white">
-          Privacy Policy
+        <a href="/contact" className="font-medium text-white">
+          Contact Us
         </a>
-        <a href="#" className="font-medium text-white">
+        <a href="/tandc" className="font-medium text-white">
           Terms & Conditions
         </a>
       </nav>
