@@ -16,7 +16,7 @@ const Header = () => {
       <div className="items-center px-4 max-w-screen-xl mx-auto md:flex md:px-8">
         <div className="flex items-center justify-between py-3 md:py-5 md:block">
           <a href="/">
-            <h1 className="text-2xl outline-slate-50 ">Tip Top Saloon</h1>
+            <h2 className="text-2xl outline-slate-50 ">Tip Top Saloon</h2>
             {/* Logo */}
             {/* <img src="./LogoNew.png" alt="Tip Top" /> */}
           </a>
