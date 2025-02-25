@@ -1,27 +1,29 @@
 const Footer = () => {
   return (
     <footer className="relative mt-20 bg-gray-900 px-4 pt-20 ">
-      <div className="absolute -top-10 left-1/2 h-16 w-16 -translate-x-1/2 rounded-xl border-4 border-sky-500 bg-white p-2">
-        <img className="h-full object-contain" src="./logo.webp" alt="" />
+      {/* Logo Positioned Above Footer */}
+      <div className="absolute -top-8 left-1/2 h-16 w-16 -translate-x-1/2 rounded-xl border-4 border-sky-500 bg-white p-2">
+        <img className="h-full object-contain" src="./logo.webp" alt="Logo" />
       </div>
-      <nav
-        aria-label="Footer Navigation"
-        className="mx-auto mb-10 flex max-w-lg flex-col gap-10 text-center sm:flex-row sm:text-left"
-      >
-        <a href="/about" className="font-medium text-white">
+
+      {/* Navigation Links */}
+      <nav className="mx-auto mb-5 flex max-w-lg flex-wrap justify-center gap-8 text-base text-white">
+        <a href="/about" className="hover:text-sky-400 transition">
           About
         </a>
-        <a href="/services" className="font-medium text-white">
+        <a href="/services" className="hover:text-sky-400 transition">
           Services
         </a>
-        <a href="/contact" className="font-medium text-white">
-          Contact Us
+        <a href="/contact" className="hover:text-sky-400 transition">
+          Contact
         </a>
-        <a href="/tandc" className="font-medium text-white">
-          Terms & Conditions
+        <a href="/tandc" className="hover:text-sky-400 transition">
+          T&C
         </a>
       </nav>
-      <p className="py-10 text-center text-gray-300">
+
+      {/* Copyright */}
+      <p className="text-center text-sm text-gray-400">
         © 2024 Tip-Top | All Rights Reserved
       </p>
     </footer>
