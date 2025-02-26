@@ -1,3 +1,6 @@
+import EmployeeList from "../components/EmployeeList";
+import ProfileCard from "../components/ProfileCard";
+
 const About = () => {
   return (
     //the title
@@ -42,6 +45,10 @@ const About = () => {
           to every cut:
         </h3>
       </section>
+
+      <div>
+        <EmployeeList />
+      </div>
     </div>
   );
 };
