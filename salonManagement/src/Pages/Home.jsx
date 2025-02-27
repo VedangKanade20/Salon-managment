@@ -39,14 +39,15 @@ const Home = () => {
                 Professional services
               </h3>
               <p className="text-white text-3xl font-semibold sm:text-4xl">
-                Build your SaaS solution with help from our experts
+                Transform Your Look with Our Expert Stylists
               </p>
               <p className="mt-3 text-white">
-                Duis aute irure dolor in reprehenderit in voluptate velit esse
-                cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
-                cupidatat non proident, sunt in culpa qui officia deserunt
-                mollit anim id est laborum, sed ut perspiciatis unde omnis iste
-                natus error sit voluptatem accusantium doloremque laudantium
+                At [Saloon Name], we believe that every haircut, shave, or
+                styling session is an opportunity to help you feel confident and
+                refreshed. Whether you're looking for a classic cut, a modern
+                style, or a relaxing grooming experience, our team of
+                professionals is here to make it happen. Step into our saloon
+                and leave feeling like the best version of yourself.
               </p>
               <a
                 href="/about"
@@ -70,25 +71,6 @@ const Home = () => {
           </div>
         </div>
       </section>
-
-      {/* 3rd section */}
-      <div className="hero bg-base-200 min-h-screen">
-        <div className="hero-content flex-col lg:flex-row-reverse">
-          <img
-            src="https://img.daisyui.com/images/stock/photo-1635805737707-575885ab0820.webp"
-            className="max-w-sm rounded-lg shadow-2xl"
-          />
-          <div>
-            <h1 className="text-5xl font-bold">Box Office News!</h1>
-            <p className="py-6">
-              Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda
-              excepturi exercitationem quasi. In deleniti eaque aut repudiandae
-              et a id nisi.
-            </p>
-            <button className="btn btn-primary">Get Started</button>
-          </div>
-        </div>
-      </div>
 
       {/* 4th section */}
       <section className="max-w-screen-xl mx-auto py-4 px-4 md:px-8">

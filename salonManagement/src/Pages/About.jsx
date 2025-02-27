@@ -49,6 +49,19 @@ const About = () => {
       <div>
         <EmployeeList />
       </div>
+
+      <div className="justify-items-center">
+        <h3 className="text-blue-300 align-middle text-xl font-serif p-1">
+          Ready for a fresh look?
+        </h3>
+
+        <a
+          className="group px-4 py-2 text-indigo-600 font-medium bg-indigo-50 rounded-full inline-flex items-center"
+          href="./Contact"
+        >
+          Book an Appointment Now!
+        </a>
+      </div>
     </div>
   );
 };

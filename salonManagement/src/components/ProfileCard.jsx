@@ -1,4 +1,5 @@
 import React from "react";
+import { IoEyeOutline } from "react-icons/io5"; // Ensure you have this import
 
 const ProfileCard = ({ employees }) => {
   const getRandomInt = (min, max) => {
@@ -8,35 +9,48 @@ const ProfileCard = ({ employees }) => {
   };
 
   const randomNumber = getRandomInt(45, 50);
+
   return (
-    <div className="w-1/4 h-72 bg-yellow-400 font-serif text-center align-middle border-r-8 p-5 text-red-950 items-center flex-col hover:shadow-xl hover:-translate-y-2 transition-all duration-300">
-      {/* Image */}
-      <div>
+    <div className="w-64 h-96 bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl hover:-translate-y-2 transition-all duration-300">
+      {/* Image Section */}
+      <div className="w-full h-48 overflow-hidden">
         <img
           src={employees.imgUrl}
           alt={employees.name}
-          className="w-full h-56 object-cover rounded-t-2xl"
+          className="w-full h-full object-cover"
         />
       </div>
 
-      {/* Emp details */}
+      {/* Details Section */}
+      <div className="p-4">
+        {/* Name and Views */}
+        <div className="flex justify-between items-center mb-2">
+          <h4 className="text-lg font-semibold text-gray-800">
+            {employees.name}
+          </h4>
+          <div className="flex items-center gap-1">
+            <IoEyeOutline className="text-gray-500" size={18} />
+            <span className="text-sm text-gray-500">{randomNumber}</span>
+          </div>
+        </div>
 
-      <div className="p-4 flex flex-col">
-        <div className="flex justify-between items-center">
-          <h4 className="text-lg font-semibold">{employees.name}</h4>
-        </div>
-        <div className="flex items-center gap-2">
-          <IoEyeOutline className="text-gray-700" size={20} />
-          <span className="text-gray-700 text-sm">{randomNumber}</span>
-        </div>
+        {/* Gender */}
+        <p className="text-sm text-gray-600 mb-1">
+          <span className="font-medium">Gender:</span> {employees.gender}
+        </p>
+
+        {/* Experience */}
+        <p className="text-sm text-gray-600 mb-1">
+          <span className="font-medium">Experience:</span>{" "}
+          {employees.experience}
+        </p>
+
+        {/* Specialization */}
+        <p className="text-sm text-gray-600">
+          <span className="font-medium">Specialization:</span>{" "}
+          {employees.specialization.join(", ")}
+        </p>
       </div>
-      <p className="text-sm text-gray-600">Gender: {employees.gender}</p>
-      <p className="text-sm text-gray-500">
-        Experience: {employees.experience}
-      </p>
-      <p className="text-sm text-gray-500">
-        Specialization: {employees.specialization}
-      </p>
     </div>
   );
 };
