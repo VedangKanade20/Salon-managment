@@ -1,6 +1,6 @@
 import React from "react";
 
-const WoensOfferCard = ({ womensServices }) => {
+const WomensOfferCard = ({ womensServices }) => {
   return (
     <div className="w-64 h-96 bg-wheat rounded-lg shadow-lg overflow-hidden hover:shadow-xl hover:-translate-y-2 transition-all duration-300">
       OfferCard
@@ -35,10 +35,10 @@ const WoensOfferCard = ({ womensServices }) => {
       </p>
       <p className="text-sm text-gray-600 mb-1">
         <span className="font-medium">Description:</span>{" "}
-        {womensServices.description}
+        {womensServices       .description}
       </p>
     </div>
   );
 };
 
-export default MensOfferCard;
+export default WomensOfferCard;
