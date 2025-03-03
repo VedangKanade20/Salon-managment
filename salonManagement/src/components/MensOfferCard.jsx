@@ -2,7 +2,7 @@ import React from "react";
 
 const MensOfferCard = ({ mensServices }) => {
   return (
-    <div className="w-64 h-96 bg-wheat rounded-lg shadow-lg overflow-hidden hover:shadow-xl hover:-translate-y-2 transition-all duration-300">
+    <div className="w-96 h-120 bg-wheat rounded-lg shadow-lg overflow-hidden hover:shadow-xl hover:-translate-y-2 transition-all duration-300">
       OfferCard
       {/* Image Section */}
       <div className="w-full h-48 overflow-hidden">
@@ -24,18 +24,10 @@ const MensOfferCard = ({ mensServices }) => {
           </h4>
         </div>
       </div>
-
       {/* Desc */}
       <p className="text-sm text-gray-600 mb-1">
-        <span className="font-medium">Description:</span> {mensServices.description}
-      </p>
-
-      <p className="text-sm text-gray-600 mb-1">
-        <span className="font-medium">Description:</span> {mensServices.description}
-      </p>
-
-      <p className="text-sm text-gray-600 mb-1">
-        <span className="font-medium">Description:</span> {mensServices.description}
+        <span className="font-medium">Description:</span>{" "}
+        {mensServices.description}
       </p>
     </div>
   );

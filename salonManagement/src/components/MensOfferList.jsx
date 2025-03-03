@@ -7,9 +7,9 @@ const MensOfferList = () => {
   console.log(mensServices);
   return (
     <div className="flex flex-wrap justify-center gap-6 p-6">
-      {mensOffersList.map((service, index) => {
-        <MensOfferCard key={index} mensServices={service} />;
-      })}
+      {mensOffersList.map((service, index) => (
+        <MensOfferCard key={index} mensServices={service} />
+      ))};
     </div>
   );
 };
