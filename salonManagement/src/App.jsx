@@ -11,7 +11,6 @@ import {
   Routes,
   Navigate,
 } from "react-router-dom";
-import TandC from "./Pages/TandC";
 
 function App() {
   return (
@@ -23,7 +22,6 @@ function App() {
             <Route path="/" element={<Home />} />
             <Route path="/about" element={<About />} />
             <Route path="/contact" element={<Contact />} />
-            <Route path="/tandc" element={<TandC />} />
             <Route path="/services" element={<Services />} />
           </Routes>
         </div>
