@@ -69,24 +69,24 @@ const Services = () => {
         </h2>
         <div className="grid grid-cols-2 gap-4">
           <img
-            src="https://images.unsplash.com/photo-1589156191108-e1b66b299222"
+            src="/service_haircut_men_1778787479761.png"
             alt="Haircut"
-            className="rounded-lg shadow-md"
+            className="rounded-lg shadow-md w-full h-48 object-cover"
           />
           <img
-            src="https://images.unsplash.com/photo-1609890876427-7e1dfb8b7eb8"
+            src="/service_beard_trim_1778787497567.png"
             alt="Beard Trim"
-            className="rounded-lg shadow-md"
+            className="rounded-lg shadow-md w-full h-48 object-cover"
           />
           <img
-            src="https://images.unsplash.com/photo-1614591599869-438eb2c3f52e"
+            src="/service_hair_color_1778787513198.png"
             alt="Hair Color"
-            className="rounded-lg shadow-md"
+            className="rounded-lg shadow-md w-full h-48 object-cover"
           />
           <img
-            src="https://images.unsplash.com/photo-1612266319977-2b8200203307"
+            src="/service_facial_cleanup_1778787534840.png"
             alt="Facial Cleanup"
-            className="rounded-lg shadow-md"
+            className="rounded-lg shadow-md w-full h-48 object-cover"
           />
         </div>
       </section>

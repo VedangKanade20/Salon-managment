@@ -32,9 +32,9 @@ const About = () => {
 
         <div className="flex justify-center items-center">
           <img
-            src="https://framerusercontent.com/images/y6h3MUMisOe3SS8MABsJ8tKikA.jpeg"
+            src="/about_salon_interior_1778787456795.png"
             alt="Modern Salon Interior"
-            className="w-full h-64 rounded-lg shadow-lg"
+            className="w-full h-64 object-cover rounded-lg shadow-lg"
           />
         </div>
       </section>
