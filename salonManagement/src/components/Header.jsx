@@ -4,9 +4,9 @@ const Header = () => {
   const [state, setState] = useState(false);
 
   const navigation = [
-    { title: "About Us", path: "./about" },
-    { title: "Services", path: "./services" },
-    { title: "Contact", path: "./contact" },
+    { title: "About Us", path: "/about" },
+    { title: "Services", path: "/services" },
+    { title: "Contact", path: "/contact" },
   ];
 
   return (
@@ -17,7 +17,7 @@ const Header = () => {
           <a href="/">
             <h2 className="text-2xl outline-slate-50 ">Tip Top Saloon</h2>
             {/* Logo */}
-            {/* <img src="./LogoNew.png" alt="Tip Top" /> */}
+            {/* <img src="/LogoNew.png" alt="Tip Top" /> */}
           </a>
           <div className="md:hidden">
             <button
@@ -71,7 +71,7 @@ const Header = () => {
         </div>
         <div className="hidden md:inline-block">
           <a
-            href="./contact"
+            href="/contact"
             className="py-3 px-4 text-white bg-indigo-600 hover:bg-indigo-700 rounded-md shadow"
           >
             Book now

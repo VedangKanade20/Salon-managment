@@ -1,109 +1,154 @@
+import { FaCut, FaStar, FaMagic, FaArrowRight } from "react-icons/fa";
+
 const Home = () => {
   return (
-    // flex direction col
-    <div className="flex-col">
-      <div
-        className="hero min-h-screen"
-        style={{
-          backgroundImage:
-            "url(https://img.daisyui.com/images/stock/photo-1507358522600-9f71e620c44e.webp)",
-        }}
-      >
-        <div className="hero-overlay bg-opacity-60"></div>
-        <div className="hero-content text-neutral-content text-center">
-          <div className="max-w-md">
-            <h1 className="mb-5 text-5xl font-extrabold">
-              Tip Top Family Salon
-            </h1>
-            <h3 className="mb-5 font-bold text-3xl">
-              Hairstyle magic happens here!!
-            </h3>
-            <button className="btn btn-primary">Get Started</button>
+    <div className="flex flex-col bg-[#0f172a] text-white">
+      {/* Hero Section */}
+      <div className="relative min-h-screen flex items-center justify-center overflow-hidden">
+        {/* Background Image with Overlay */}
+        <div className="absolute inset-0 z-0">
+          <img
+            src="/hero_salon_bg_1778786673852.png"
+            alt="Salon Interior"
+            className="w-full h-full object-cover opacity-30"
+          />
+          <div className="absolute inset-0 bg-gradient-to-b from-transparent via-[#0f172a]/80 to-[#0f172a]"></div>
+        </div>
+
+        <div className="relative z-10 text-center px-4 max-w-5xl mx-auto mt-20">
+          <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white/10 backdrop-blur-md border border-white/20 mb-8">
+            <FaMagic className="text-amber-400" />
+            <span className="text-sm font-medium tracking-wider uppercase text-amber-200">Premium Family Salon</span>
+          </div>
+          
+          <h1 className="text-5xl md:text-7xl font-extrabold mb-6 tracking-tight leading-tight">
+            Elevate Your Style at <br />
+            <span className="text-transparent bg-clip-text bg-gradient-to-r from-amber-200 via-amber-400 to-amber-200">
+              Tip Top Salon
+            </span>
+          </h1>
+          
+          <p className="text-xl md:text-2xl text-gray-300 mb-10 max-w-2xl mx-auto font-light">
+            Experience the art of grooming. Where classic techniques meet modern trends in a luxurious atmosphere.
+          </p>
+          
+          <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
+            <a href="/contact" className="px-8 py-4 bg-gradient-to-r from-amber-500 to-amber-600 hover:from-amber-400 hover:to-amber-500 text-slate-900 rounded-full font-bold text-lg transition-all duration-300 transform hover:scale-105 shadow-[0_0_20px_rgba(245,158,11,0.3)] flex items-center gap-2">
+              Book Appointment <FaArrowRight />
+            </a>
+            <a href="/services" className="px-8 py-4 bg-white/10 hover:bg-white/20 backdrop-blur-md border border-white/20 text-white rounded-full font-bold text-lg transition-all duration-300">
+              Explore Services
+            </a>
           </div>
         </div>
       </div>
 
-      {/* 2nd section */}
-      <section className="py-14">
-        <div className="max-w-screen-xl mx-auto md:px-8">
-          <div className="items-center gap-x-12 sm:px-4 md:px-0 lg:flex">
-            <div className="flex-1 sm:hidden lg:block">
+      {/* About Section */}
+      <section className="py-24 relative">
+        <div className="max-w-screen-xl mx-auto px-4 md:px-8">
+          <div className="flex flex-col lg:flex-row items-center gap-16">
+            <div className="flex-1 relative">
+              <div className="absolute -inset-4 bg-gradient-to-r from-amber-500 to-sky-500 opacity-20 blur-2xl rounded-full"></div>
               <img
-                src="https://images.unsplash.com/photo-1557804506-669a67965ba0?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80"
-                className="md:max-w-lg sm:rounded-lg"
-                alt=""
+                src="/professional_stylist_1778786695768.png"
+                className="relative rounded-2xl shadow-2xl object-cover h-[600px] w-full border border-white/10"
+                alt="Professional Stylist"
               />
+              {/* Floating Badge */}
+              <div className="absolute -bottom-8 -right-8 bg-slate-800 p-6 rounded-2xl border border-white/10 shadow-xl backdrop-blur-md hidden md:block">
+                <div className="flex items-center gap-4">
+                  <div className="bg-amber-500/20 p-3 rounded-full">
+                    <FaStar className="text-amber-500 text-2xl" />
+                  </div>
+                  <div>
+                    <p className="text-3xl font-bold text-white">10+</p>
+                    <p className="text-gray-400 font-medium">Years Experience</p>
+                  </div>
+                </div>
+              </div>
             </div>
-            <div className="max-w-xl px-4 space-y-3 mt-6 sm:px-0 md:mt-0 lg:max-w-2xl">
-              <h3 className="text-white font-semibold">
-                Professional services
-              </h3>
-              <p className="text-white text-3xl font-semibold sm:text-4xl">
+            
+            <div className="flex-1 space-y-8">
+              <div className="inline-flex items-center gap-2 text-amber-400 font-semibold tracking-wider uppercase">
+                <FaCut className="text-xl" />
+                <span>Our Expertise</span>
+              </div>
+              <h2 className="text-4xl md:text-5xl font-bold text-white leading-tight">
                 Transform Your Look with Our Expert Stylists
+              </h2>
+              <p className="text-lg text-gray-400 leading-relaxed font-light">
+                At Tip Top Salon, we believe that every haircut, shave, or styling session is an opportunity to help you feel confident and refreshed. Whether you're looking for a classic cut, a modern style, or a relaxing grooming experience, our team of professionals is here to make it happen.
               </p>
-              <p className="mt-3 text-white">
-                At [Saloon Name], we believe that every haircut, shave, or
-                styling session is an opportunity to help you feel confident and
-                refreshed. Whether you're looking for a classic cut, a modern
-                style, or a relaxing grooming experience, our team of
-                professionals is here to make it happen. Step into our saloon
-                and leave feeling like the best version of yourself.
-              </p>
-              <a
-                href="/about"
-                className="inline-flex gap-x-1 items-center text-indigo-600 hover:text-indigo-500 duration-150 font-medium"
-              >
-                Learn more
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  viewBox="0 0 20 20"
-                  fill="currentColor"
-                  className="w-5 h-5"
+              
+              <div className="grid grid-cols-2 gap-6 pt-4">
+                <div className="space-y-2">
+                  <h4 className="text-2xl font-bold text-white">Precision Cuts</h4>
+                  <p className="text-gray-400 text-sm">Tailored specifically to your features.</p>
+                </div>
+                <div className="space-y-2">
+                  <h4 className="text-2xl font-bold text-white">Premium Styling</h4>
+                  <p className="text-gray-400 text-sm">Using only the finest luxury products.</p>
+                </div>
+              </div>
+
+              <div className="pt-6">
+                <a
+                  href="/about"
+                  className="inline-flex items-center gap-2 text-amber-400 hover:text-amber-300 font-medium text-lg transition-colors group"
                 >
-                  <path
-                    fillRule="evenodd"
-                    d="M3 10a.75.75 0 01.75-.75h10.638L10.23 5.29a.75.75 0 111.04-1.08l5.5 5.25a.75.75 0 010 1.08l-5.5 5.25a.75.75 0 11-1.04-1.08l4.158-3.96H3.75A.75.75 0 013 10z"
-                    clipRule="evenodd"
-                  />
-                </svg>
-              </a>
+                  Discover our story
+                  <FaArrowRight className="transform group-hover:translate-x-1 transition-transform" />
+                </a>
+              </div>
             </div>
           </div>
         </div>
       </section>
 
-      {/* 4th section */}
-      <section className="max-w-screen-xl mx-auto py-4 px-4 md:px-8">
-        <div className="max-w-xl">
-          <div className="py-4">
-            <h3 className="text-3xl text-white font-semibold md:text-4xl">
-              Fabulous hairdressing starts{" "}
-              <span className="text-indigo-600">here</span>
-            </h3>
-            <p className="text-gray-500 leading-relaxed mt-3 text-xl">
-              We have the best methodologies in hair care
-            </p>
-          </div>
-          <a
-            className="group px-4 py-2 text-indigo-600 font-medium bg-indigo-50 rounded-full inline-flex items-center"
-            href="./Contact"
-          >
-            Book an Appointment Now!
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              className="h-6 w-6 ml-1 duration-150 group-hover:translate-x-1"
-              fill="none"
-              viewBox="0 0 24 24"
-              stroke="currentColor"
-            >
-              <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                strokeWidth={2}
-                d="M13 7l5 5m0 0l-5 5m5-5H6"
+      {/* Featured Products/Services Preview Section */}
+      <section className="py-24 bg-slate-900/50 border-t border-white/5 relative overflow-hidden">
+         {/* Decorative blobs */}
+         <div className="absolute top-0 left-0 w-96 h-96 bg-amber-500/10 rounded-full blur-3xl"></div>
+         <div className="absolute bottom-0 right-0 w-96 h-96 bg-sky-500/10 rounded-full blur-3xl"></div>
+
+        <div className="max-w-screen-xl mx-auto px-4 md:px-8 relative z-10">
+          <div className="flex flex-col lg:flex-row-reverse items-center gap-16">
+            <div className="flex-1">
+              <img
+                src="/hair_care_products_1778786714574.png"
+                className="rounded-2xl shadow-2xl object-cover h-[500px] w-full border border-white/10"
+                alt="Premium Hair Care Products"
               />
-            </svg>
-          </a>
+            </div>
+            
+            <div className="flex-1 space-y-6">
+              <h2 className="text-4xl md:text-5xl font-bold text-white leading-tight">
+                Fabulous hairdressing starts <span className="text-transparent bg-clip-text bg-gradient-to-r from-amber-400 to-amber-600">here</span>
+              </h2>
+              <p className="text-xl text-gray-400 leading-relaxed font-light">
+                We utilize the industry's most advanced methodologies and premium products to ensure your hair not only looks stunning but remains healthy and vibrant.
+              </p>
+              
+              <ul className="space-y-4 py-6">
+                {['Top-tier styling products', 'Customized hair treatments', 'Relaxing salon environment'].map((item, i) => (
+                  <li key={i} className="flex items-center gap-3 text-gray-300">
+                    <div className="w-6 h-6 rounded-full bg-amber-500/20 flex items-center justify-center border border-amber-500/50">
+                      <FaMagic className="text-amber-400 text-xs" />
+                    </div>
+                    {item}
+                  </li>
+                ))}
+              </ul>
+
+              <a
+                href="/contact"
+                className="inline-flex items-center justify-center gap-2 px-8 py-4 bg-white text-slate-900 hover:bg-gray-100 rounded-full font-bold text-lg transition-all duration-300 transform hover:scale-105"
+              >
+                Book an Appointment
+                <FaArrowRight />
+              </a>
+            </div>
+          </div>
         </div>
       </section>
     </div>

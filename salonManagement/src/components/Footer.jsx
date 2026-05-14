@@ -3,7 +3,7 @@ const Footer = () => {
     <footer className="relative mt-20 bg-gray-900 px-4 pt-20 ">
       {/* Logo Positioned Above Footer */}
       <div className="absolute -top-8 left-1/2 h-16 w-16 -translate-x-1/2 rounded-xl border-4 border-sky-500 bg-white p-2">
-        <img className="h-full object-contain" src="./logo.webp" alt="Logo" />
+        <img className="h-full object-contain" src="/logo.webp" alt="Logo" />
       </div>
 
       {/* Navigation Links */}
